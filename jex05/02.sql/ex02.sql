@@ -86,4 +86,4 @@ update tbl_board set replycnt =
 alter table tbl_attach add constraint pk_attach primary key (uuid);
 
 alter table tbl_attach add constraint fk_board_attach foreign key (bno)
-references tbl_board(bno) ON DELETE CASCADE;a
+references tbl_board(bno) ON DELETE CASCADE;
