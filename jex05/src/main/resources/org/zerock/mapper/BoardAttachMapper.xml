@@ -15,7 +15,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		
 		</delete>
 		
-		<select id="findByBno" resultType="org.zerock.domain.BoardAttacheVO">
+		<select id="findByBno" resultType="org.zerock.domain.BoardAttachVO">
 		select * from tbl_attach where bno = #{bno}
 		</select>
 		
