@@ -3,7 +3,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ include file="../includes/header.jsp" %>
-    <style>
+<style>
  .uploadResult	{
  	width:100%;
  	background-color: gray;
@@ -126,6 +126,7 @@
 		</div>
 		<!-- row  -->
 							
+							
 							<!-- 댓글 시작  -->
 							<div class='row'>
 								<div class="col-lg-12">
@@ -159,7 +160,6 @@
 			</div>
 		</div>
 	</div>
-	
 	
 	                          <!-- Modal -->
                             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -196,12 +196,10 @@
                                 <!-- /.modal-dialog -->
                             </div>
                             <!-- /.modal -->
+	
+<script type="text/javascript" src="/resources/js/reply.js"></script>
+<script>
 
-		
-
-
-	<script type="text/javascript" src="/resources/js/reply.js"></script>
-<script>	
 $(document).ready(function(){
 	
 	var bnoValue = '<c:out value="${board.bno}"/>';
@@ -591,3 +589,6 @@ $(".bigPictureWrapper").on("click", function(e){
 
 
 </script>
+
+<%@include file="../includes/footer.jsp" %>
+
